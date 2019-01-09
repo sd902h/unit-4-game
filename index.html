@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center">Crystal Collector!</h1>
+        <div class="text-center"></div>
+    </div>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <div class="media">
+                <div class="media-body">
+                    <p>sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                        nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </p>
+                    <p>sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                        nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </p>
+                    <p>sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                        nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="container">
+        <!-- The div where our crystal image will be shown. -->
+        <div id="crystals"></div>
+
+        <div id="game-section">
+            <div>
+                <h3 class="section-title">Wins</h3>
+                <!-- The div where our wins will be shown. -->
+                <div id="wins"></div>
+            </div>
+            <div id="losses-section">
+                <h3 class="section-title">losses</h3>
+                <!-- The div where our current word (and guessing progress) will be shown. -->
+                <div id="losses"></div>
+            </div>
+            <div id="total-score-section">
+                <h3 class="section-title">Number of Guesses Remaining</h3>
+                <!-- The div where our remaining guesses will be shown. -->
+                <div id="total-score"></div>
+            </div>
+            <div id="number-to-guess-section">
+                <!-- The div where our guesses letters will be shown. -->
+                <span id="number-to-guess"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Linking to our JavaScript file. -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

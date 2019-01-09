@@ -1,0 +1,11 @@
+.crystal-image {
+    /* object-fit: cover;
+    display: flex;
+    flex-direction: row; */
+    height: 200px;
+    width: 200px;
+}
+
+#container {
+    text-align: center;
+}
