@@ -34,6 +34,8 @@ var counter = 0;
     $("#crystals").append(imageCrystal);
   }
 
+  $("#total-score-section").text(counter);
+  
    // This time, our click event applies to every single crystal on the page. Not just one.
    $(".crystal-image").on("click", function() {
 
@@ -49,7 +51,7 @@ var counter = 0;
     counter += crystalValue;
 
     // All of the same game win-lose logic applies. So the rest remains unchanged.
-    alert("New score: " + counter);
+    $("#total-score-section").text(counter);
 
     if (counter === targetNumber) {
       alert("You win!");

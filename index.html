@@ -18,6 +18,10 @@
     <div class="jumbotron">
         <h1 class="text-center">Crystal Collector!</h1>
         <div class="text-center"></div>
+        <div id="number-to-guess-section">
+            <h1>Number to guess:</h1>
+            <span id="number-to-guess"></span>
+        </div>
     </div>
 
     <div id="main-container" class="container">
@@ -46,24 +50,23 @@
         <div id="crystals"></div>
 
         <div id="game-section">
+            <section>
+                <div>
+                    <h3 class="section-title">Wins</h3>
+                    <!-- The div where our wins will be shown. -->
+                    <div id="wins"></div>
+                </div>
+                <div id="losses-section">
+                    <h3 class="section-title">losses</h3>
+                    <!-- The div where our current word (and guessing progress) will be shown. -->
+                    <div id="losses"></div>
+                </div>
+            </section>
             <div>
-                <h3 class="section-title">Wins</h3>
-                <!-- The div where our wins will be shown. -->
-                <div id="wins"></div>
-            </div>
-            <div id="losses-section">
-                <h3 class="section-title">losses</h3>
-                <!-- The div where our current word (and guessing progress) will be shown. -->
-                <div id="losses"></div>
+                <h3 class="section-title">Your total score is:</h3>
             </div>
             <div id="total-score-section">
-                <h3 class="section-title">Number of Guesses Remaining</h3>
-                <!-- The div where our remaining guesses will be shown. -->
-                <div id="total-score"></div>
-            </div>
-            <div id="number-to-guess-section">
-                <!-- The div where our guesses letters will be shown. -->
-                <span id="number-to-guess"></span>
+                <h3 class="section-title"></h3>
             </div>
         </div>
     </div>
