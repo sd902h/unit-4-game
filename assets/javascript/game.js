@@ -1,6 +1,6 @@
 
 function getRandomNumber(low, high) {
-  return Math.floor(Math.random() * high) + low;
+  return low + Math.floor(Math.random() * (high-low));
 }
 
 var targetNumber = getRandomNumber(19, 120);
@@ -63,19 +63,29 @@ $(".crystal-image").on("click", function () {
   $("#total-score-section").text(counter);
 
   if (counter === targetNumber) {
+    counter = 0;
     winCount++;
     $("#wins").text(winCount);
     targetNumber = getRandomNumber(19, 120);
     $("#number-to-guess").text(targetNumber);
-    $("#total-score-section").text('0');
-    document.getElementById('imageBlue').attr("data-crystalvalue", getRandomNumber(1, 12));
-    document.getElementById('imageGreen').attr("data-crystalvalue", getRandomNumber(1, 12));
-    document.getElementById('imagePurple').attr("data-crystalvalue", getRandomNumber(1, 12));
-    document.getElementById('imageRed').attr("data-crystalvalue", getRandomNumber(1, 12));
+    $("#total-score-section").text(counter);
+    document.getElementById('imageBlue').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imageGreen').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imagePurple').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imageRed').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
   }
 
   else if (counter >= targetNumber) {
-    alert("You lose!!");
+    counter = 0;
+    lossCount++;
+    $("#losses").text(lossCount);
+    targetNumber = getRandomNumber(19, 120);
+    $("#number-to-guess").text(targetNumber);
+    $("#total-score-section").text(counter);
+    document.getElementById('imageBlue').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imageGreen').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imagePurple').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imageRed').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
   }
 
 });
