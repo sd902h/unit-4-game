@@ -23,8 +23,8 @@ for (var i = 0; i < 4; i++) {
 
   // Each imageCrystal will be given a src link to the crystal image
   if (i == 0) {
-    imageCrystal.attr('id', 'imageBlue');
-    imageCrystal.attr("src", "assets/images/blue.jpg");
+    imageCrystal.attr('id', 'imageYellow');
+    imageCrystal.attr("src", "assets/images/yellowtwo.jpeg");
 
   }
   if (i == 1) {
@@ -69,7 +69,7 @@ $(".crystal-image").on("click", function () {
     targetNumber = getRandomNumber(19, 120);
     $("#number-to-guess").text(targetNumber);
     $("#total-score-section").text(counter);
-    document.getElementById('imageBlue').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imageYellow').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
     document.getElementById('imageGreen').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
     document.getElementById('imagePurple').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
     document.getElementById('imageRed').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
@@ -82,7 +82,7 @@ $(".crystal-image").on("click", function () {
     targetNumber = getRandomNumber(19, 120);
     $("#number-to-guess").text(targetNumber);
     $("#total-score-section").text(counter);
-    document.getElementById('imageBlue').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
+    document.getElementById('imageYellow').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
     document.getElementById('imageGreen').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
     document.getElementById('imagePurple').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
     document.getElementById('imageRed').setAttribute("data-crystalvalue", getRandomNumber(1, 12));
